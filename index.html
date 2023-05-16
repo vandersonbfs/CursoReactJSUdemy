@@ -9,7 +9,20 @@
 
 </head>
 <body>
-    <button onclick="window.location.href='contato.html'; " >Ir para o Google</button> <br>
-    <button onclick="window.location.href = window.location.href">Atualizar pagina</button>
+    <div id="area">
+Bem vindo....
+<br/><br/>
+    </div>
+    <button onclick="document.getElementById('area').innerHTML = 'Bem vindo, ' + prompt('Qual é o seu nome?'); ">Entrar</button>
+<br/><br/>
+
+
+<div id="area">
+    Qual o nome do botão?
+    <br/><br/>
+        </div>
+        <button onclick="this.innerHTML = prompt('Qual é o nome do botão?'); ">Qual é o nome do botão?</button>
+    <br/><br/>
+
 </body>
 </html>
